@@ -13,7 +13,7 @@ body {
 
 @media (min-width: 900px) {
     h4 {
-        float: right;
+        float: left;
     }
 }
 
@@ -33,3 +33,16 @@ p {
     color: red;
 }
 
+.food {
+    clear: both;
+}
+
+.tvshows {
+    clear: both;
+}
+
+form {
+    max-width: 400px;
+    padding: 10px;
+    background-color: aliceblue;
+}
