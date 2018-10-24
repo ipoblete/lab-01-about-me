@@ -41,8 +41,6 @@
         <form id="about-me-form" 
             onsubmit="event.preventDefault(); checkAboutMe();"  
             onreset="resetAboutMe();">
-
-    <section class="food">
         <div>
             <label for="pizza">Do I like pizza?</label>
             <input type="text" id="pizza" placeholder="yes/no"/>
@@ -67,13 +65,20 @@
             <label for="">Do I like pizza?</label>
             <input type="text" id="pizza" placeholder="yes/no"/>
         </div>
+
+        <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Play Again</button>
+        </div>
+        </form>
     </section>
 
     <section>
         <h5>Guess my favorite TV shows/movies!</h5>
-        <form id="about-me-form" 
+        <form id="about-me-form" name="about-me-form"
             onsubmit="event.preventDefault(); checkAboutMe();"  
-            onreset="resetAboutMe();">
+            onreset="resetAboutMe();"
+        >
     
     <section class="tvshows">
         <div>
@@ -100,7 +105,16 @@
             <label for="this-is-us">I like to watch This Is Us.</label>
             <input type="text" id="this-is-us" placeholder="true/false"/>
         </div>
+
+        <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Play Again</button>
+        </div>
     </section>
+
+        <p id="guess-number-response"></p>
+    
+    <script src="aboutme.js"></script>
 
 </body>
 </html>
