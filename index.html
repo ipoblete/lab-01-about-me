@@ -41,9 +41,10 @@
         <form id="about-me-form" 
             onsubmit="event.preventDefault(); checkAboutMe();"  
             onreset="resetAboutMe();">
+
         <div>
             <label for="pizza">Do I like pizza?</label>
-            <input type="text" id="pizza" placeholder="yes/no"/>
+            <input type="text" name ="pizza" id="pizza" placeholder="yes/no"/>
         </div>
 
         <div>
@@ -77,8 +78,7 @@
         <h5>Guess my favorite TV shows/movies!</h5>
         <form id="about-me-form" name="about-me-form"
             onsubmit="event.preventDefault(); checkAboutMe();"  
-            onreset="resetAboutMe();"
-        >
+            onreset="resetAboutMe();">
     
     <section class="tvshows">
         <div>
@@ -113,8 +113,32 @@
     </section>
 
         <p id="guess-number-response"></p>
-    
-    <script src="aboutme.js"></script>
 
+    <p class="content">Which is my favorite food?</p>
+
+    <form>
+        <p>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+        </p>
+
+        <fieldset>
+            <input name="food" type="radio" id="pizza" value="pizza">
+            <label for="pizza">Pizza</label>
+
+            <input name="food" type="radio" id="burgers" value="burgers">
+            <label for="burgers">Burgers</label>
+            
+            <input name="food" type="radio" id="sushi" value="sushi">
+            <label for="sushi">Sushi</label>
+        </fieldset>
+
+        <div>
+            <button onclick="tryQuerySelector()">try query selector</button>
+        </div>
+    </form>
+
+    <script src="aboutme.js"></script>
+    <script> src="elementcounter.js"</script>
 </body>
 </html>

@@ -32,3 +32,4 @@ function resetAboutMe() {
 
     aboutMeResponse.textContent ="";
 }
+
