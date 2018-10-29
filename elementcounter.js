@@ -3,24 +3,17 @@
 'use strict';
 
 // eslint-disable-next-line
-var xIsTheNumber = 12;
+    
 
 function tryQuerySelector() {
-    var foodInputs = document.querySelectorAll('input[name="food"]');
+    var tags = document.querySelectorAll('input[name="tags"]:checked');
 
-    for(var i = 0; i < foodInputs.length; i++) {
-        var input = foodInputs[i];
-        console.log(input.value, input.id, input.checked);
-    }
+    for(var i = 0; i < tags.length; i++) {
+        var input = tags.Count[i];
 
-    var selectedFoodInput = document.querySelector('input[name="food"]:checked');
-
-    if(selectedFoodInput) {
-        console.log(selectedFoodInput.value);
-    }
-    else {
-        console.log('no food selected');
-    }
+        console.log(input.value, input.checked);
+    if()
     
-    console.log(xIsTheNumber);
+    }
+
 }
