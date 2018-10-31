@@ -3,6 +3,7 @@
 var aboutMeForm = document.getElementById('about-me-form');
 var aboutMeResponse = document.getElementById('about-me-response');
 
+
 function checkAboutMe() {
     var elements = aboutMeForm.elements;
 
@@ -11,6 +12,7 @@ function checkAboutMe() {
 
     var correct = 0;
     //console.log('pizza');
+
     if(likePizza.toLowerCase() === 'yes') {
         // let's run this code if i like pizza
         correct = correct + 1;
